@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>"welcome to html page"</title>
+</head>
+<body>	
+<h1>"welcome to ruby on rails"</h1>
+<%= link_to "Add user",new_user_path %>
+<% @users.each do |user| %>
+<table style="border:2px solid pink">
+  <tr>
+  <th>firstname</th>
+  <th>lastname</th>
+  <th>designation</th>
+  <th>origin</th></tr>
+<tr>    <td><%= user.firstname%></td> 
+    <td><%= user.lastname%></td>
+    <td><%= user.designation%></td>
+    <td><%= user.origin%></td> 
+  </tr>
+</table>
+<% end %>
+</body>
+</html>
